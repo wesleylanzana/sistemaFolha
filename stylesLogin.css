@@ -1,38 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
   background-image: url(https://i.imgur.com/cH95qXX.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed
+  
 }
 
-.container{
-  display:flex;
+.container {
+  display: flex;
   justify-content: center;
-  color: rgb(76, 103, 127);
   width: 100%;
   margin-top: 100px;
 }
 
-.card{
-  background-color: #eae1e180;
+.card {
+  background-color: #ffffff80;
   padding: 30px;
-  border-radius: 5%;
-  box-shadow: 3px 3px 1px 0px #00000070;
-  
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #00000060
 }
 
 h1{
   text-align: center;
   margin-bottom: 20px;
-  color:#272262;
+  color: #272262
 }
 
 .label-float input{
@@ -47,11 +46,12 @@ h1{
   font-size: 16px;
   transition: all .3s ease-out;
   border-radius: 0;
+  
 }
 
 .label-float{
   position: relative;
-  padding-top: 8px;
+  padding-top: 13px;
   margin-top: 5%;
   margin-bottom: 5%;
 }
@@ -62,19 +62,19 @@ h1{
 
 .label-float label{
   color: #272262;
-  pointer-events: none;
+  pointer-event: none;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   margin-top: 13px;
-  transition: all 0.3s ease-out;
+  transition: all .3s ease-out;
 }
 
 .label-float input:focus + label,
 .label-float input:valid + label{
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 0;
-  color:#4038a0;
+  color: #4038a0
 }
 
 button{
@@ -88,16 +88,15 @@ button{
   border-radius: 4px;
   cursor: pointer;
   outline: none;
+  transition: all .4s ease-out;
 }
 
 button:hover{
   background-color: #272262;
-  color: white;
-  transition: all 0.5s ease-out
+  color: #fff;
 }
 
-
-#acessar{
+.justify-center{
   display: flex;
   justify-content: center;
 }
@@ -106,11 +105,10 @@ hr{
   margin-top: 10%;
   margin-bottom: 10%;
   width: 60%;
-  justify-content: center;
 }
 
 p{
-  color:#272262;
+  color: #272262;
   font-size: 14pt;
   text-align: center;
 }
@@ -119,11 +117,11 @@ a{
   color: #7a3077;
   font-weight: bold;
   text-decoration: none;
-  transition: all 0.3s ease-out;
+  transition: all .3s ease-out;
 }
 
 a:hover{
-  color:#272262;
+  color: #272262;
 }
 
 .fa-eye{
@@ -131,6 +129,14 @@ a:hover{
   top: 15px;
   right: 10px;
   cursor: pointer;
-  color:#272262;
+  color: #272262;
+}
 
+ #msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
 }

@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Sistema de Folha - Cadastro</title>
-        <script type="text/javascript" src="./custom.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <link type="text/css" rel="stylesheet" href="./stylesCadastro.css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
@@ -13,31 +13,33 @@
 
                     <div class="label-float">
                         <input type="text" id="nome" placeholder="" required>
-                        <label for="nome">Nome</label>
+                        <label id="labelNome" for="nome">Nome</label>
                     </div>
 
                     <div class="label-float">
                         <input type="text" id="usuario" placeholder="" required>
-                        <label for="usuario">Usuário</label>
+                        <label id="labelUsuario" for="usuario">Usuário</label>
                     </div>
 
                     <div class="label-float">
-                        <input type="password" id="senha" placeholder="" required>
-                        <label for="senha">Senha</label>
-                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <input type="password" id="senhaCadastro" placeholder="" required>
+                        <label id="labelSenha" for="senhaCadastro">Senha</label>
+                        <i id="verSenha" class="fa fa-eye" aria-hidden="true" onclick="btnVerSenha()"></i>
                     </div>
 
                     <div class="label-float">
-                        <input type="password" id="confirmarSenha" placeholder="" required>
-                        <label for="confirmarSenha">Confirmar senha</label>
-                        <i class="fa fa-eye" aria-hidden="true"></i>
+                        <input type="password" id="senhaCadastroConfirmar" placeholder="" required>
+                        <label id="labelConfirmarSenha" for="senhaCadastroConfirmar">Confirmar senha</label>
+                        <i id="confirmarSenha" class="fa fa-eye" aria-hidden="true" onclick="btnConfirmarSenha()"></i>
                     </div>
 
                     <div clas="justify-center" id="acessar">
-                        <button>Cadastrar</button>
+                        <button onclick="cadastrar()">Cadastrar</button>
                     </div>
 
             </div>    
         </div>    
     </body>
+    <script type="text/javascript" src="./custom.js"></script>
+    <script type="text/javascript" src="./validateForm.js"></script>
 </html>

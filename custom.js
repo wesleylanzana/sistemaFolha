@@ -1,13 +1,38 @@
-let btnEye = document.querySelector('#fa-eye') //selecionando a classe do olho
-
-//adicionando evento de click nessa variável
-btnEye.addEventListener('click', ()=>{
-    let inputSenha = document.querySelector('#senha'); //pegando o valor do id senha
-
-    //Pegando o valor original do atributo type que é password e setando para text no click
+//tela de login
+function btnPassword(){
+ let inputSenha = document.querySelector('#senha')
+  
     if(inputSenha.getAttribute('type') == 'password'){
         inputSenha.setAttribute('type', 'text')
-    }else{
+    } else {
         inputSenha.setAttribute('type', 'password')
     }
-})
+
+}
+
+//tela de cadastro
+function btnVerSenha(){
+    let inputSenhaCadastro = document.querySelector('#senhaCadastro')
+  
+    if(inputSenhaCadastro.getAttribute('type') == 'password'){
+        inputSenhaCadastro.setAttribute('type', 'text')
+    } else {
+        inputSenhaCadastro.setAttribute('type', 'password')
+    }
+}
+
+function btnConfirmarSenha(){
+    let senhaCadastroConfirmar = document.querySelector('#senhaCadastroConfirmar')
+  
+    if(senhaCadastroConfirmar.getAttribute('type') == 'password'){
+        senhaCadastroConfirmar.setAttribute('type', 'text')
+    } else {
+        senhaCadastroConfirmar.setAttribute('type', 'password')
+    }
+}
+
+
+//Cadastrar usuário
+function cadastrar(){
+
+}
